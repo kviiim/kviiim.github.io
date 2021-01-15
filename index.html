@@ -1,20 +1,25 @@
 <html>
     <head>
+        <link href="bootstrap.css" rel="stylesheet" type="text/css">
         <link href="styles.css" rel="stylesheet" type="text/css" />
         <script src="components/header.js" type="text/javascript" defer></script>
     </head>
     <body>
-        <header-template></header-template>
-        <p>hi <br>
-            am kat <br> 
-            dont want to do this rn <br>
-            so am just not<br>
-            this is me <br>
-        </p>
-        <p> I'm a student at Olin College of Engineering, majoring in engineering with a concentration in computing. 
-            <br>I'm particularly passionate about robotics, and am really interested in how computer vision can make smarter robots.
-           <br> Beyond my engineering projects, you can find me working on advocacy projects, playing piano, or sketching. 
-        </p>
-        <img src="components/portpic.jpg" alt="Picture of Kat"> 
+        <div class="container">
+            <header-template></header-template>
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-4">
+                    <img src="components/portpic.jpg" alt="Picture of Kat" width="100%"> 
+                </div>
+                <div class="col-8">
+                    <h1>Hello,</h1>
+                    <p> I'm Katherine, a student at Olin College of Engineering, majoring in engineering with a concentration in computing. 
+                    <br>I'm particularly passionate about robotics, and am really interested in how computer vision can make smarter robots.
+                    <br> Beyond my engineering projects, you can find me working advocating about various things from workers rights to transparency
+                     in the fashion industry, playing my favorite abba songs on piano, or sketching portraits of my friends. 
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

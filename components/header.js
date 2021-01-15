@@ -5,21 +5,19 @@ class Header extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-        <header>
         <div class="header">
-        <div class="name">
-            Katherine Mackowiak
-        </div>
-          <nav>
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+          <div class="name align-self-center">
+              Katherine Mackowiak
           </div>
-        </header>
+          <div class="links align-self-center justify-content-end">
+            <ul class="links align-self-center justify-content-end">
+              <li><a href="index.html" class="align-self-center justify-self-right">Home</a></li>
+              <li><a href="projects.html" class="align-self-center justify-self-right">Projects</a></li>
+              <li><a href="resume.html" class="align-self-center justify-self-right">Resume</a></li>
+              <li><a href="contact.html" class="align-self-center justify-self-right">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       `;
     }
   }
