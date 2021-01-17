@@ -8,19 +8,55 @@
         <div class="container">
             <header-template></header-template>
             <div class="row" style="padding-top: 20px;">
-                <div class="col">
+                <div class="col-4">
                     <img src="components/2018robot.jpg" alt="Picture of FIRST Robotics Competition Robot" width="100%">
-                    <p>Cube Tracking Robot</p>
+                    <h6 class="project_header">Cube Tracking Robot</h6>
+                    <p>
+                        Used opencv to track yellow game pieces as part of a project for FIRST Robotics Team 1511. Isolated the largest cluster of
+                        pixels that were within the yellow color range to identify the nearest cube, and then used the position
+                        in the frame to adjust the robot path to the game piece. The code also would proportionally adjust speed
+                        based on the distance of the target, so it would collide with the cube at a speed that would potentially 
+                        damage the robot. This would allow the robot to autonomously aquire game pieces during a match.<br>
+                    </p>
+                    <div class="project_links">
+                        <a href="cube_tracking.html">Watch Video >></a>
+                        <a href="https://github.com/kviiim/FRC_1511_2018/blob/main/thunderbot2018/src/Vision.cpp">View Code >></a>
+                    </div>
                 </div>
-                <div class="col">
+                <div class="col-4">
                     <img src="components/flights.PNG" alt="Flight Takeoff Times Impacted by a Storm" width="100%">
-                    <p>Airplane Schedule Simulation</p>
+                    <h6 class="project_header">Airplane Schedule Simulation</h6>
+                    <p>
+                        Wrote a simple model of planes moving between airports. For each simulation a schedule of
+                        flights was generated, where each airplane in the model moved to an airport, waited a specific amount of time simulating preparing
+                        the plane for flight, and then moved to the next airport. We then ran two versions of the model, once with no delays, and once 
+                        with a 'storm' or - delays causing any flights arriving or leaving from an airport for a set period of time. We then viewed how
+                        this delay impacted the rest of our flight schedule. While the model showed delays, it didn't completely mirror the long term effects
+                        that one sees in reality, however this was probably a result of some of the simplifications we made.
+                        <br>
+                    </p>
+                    <div class="project_links">
+                        <a href="flights.html">Project Report >></a>
+                    </div>
                 </div>
-                <div class="col">
-                    <p>Corona Virus Quarantine Game</p>
+                <div class="col-4">
+                    <img src="components/ferriswheel.PNG" alt="Graph of Force Require To Hang on to a Ferris Wheel as it Rotates" width="100%">
+                    <h6 class="project_header">Ferris Wheel Physics</h6>
+                    <p>Modeled the force required for a person to hang off of a ferris wheel as it moved. This project was inspired by the scene in <i>The 
+                        Notebook</i> in which Noah - Ryan Gosling - hangs off of the ferris wheel that his love interest is on while asking her out. We wanted
+                        to determine what the maximum speed the ferris wheel could spin at before it overcame our estimate of Ryan Goslings grip strength and 
+                        ejected him from the ferris wheel.
+                        <br>
+                    </p>
+                    <div class="project_links">
+                        <a href="https://docs.google.com/presentation/d/1Iit8nllmkXTLzAgRGsqe4t7dUTxKWrN1s0_u11CIKJM/edit?usp=sharing">Presentation >></a>
+                        <a href="https://github.com/kviiim/Modsim-project-3/blob/master/noah.py">View Code >></a>
+                    </div>
                 </div>
-                <div class="col">
-                    <p>Just Labor Advocacy Project</p>
+            </div>
+            <div class="row" style="padding-top: 20px;"></div>
+                <div class="col-4">
+                    <h6 class="project_header">Just Labor Advocacy Project</h6>
                 </div>
             </div>
         </div>
