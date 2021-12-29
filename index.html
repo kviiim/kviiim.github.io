@@ -1,25 +1,236 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <link href="bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="styles.css" rel="stylesheet" type="text/css" />
-        <script src="components/header.js" type="text/javascript" defer></script>
-    </head>
-    <body>
-        <div class="container">
-            <header-template></header-template>
-            <div class="row" style="padding-top: 20px;">
-                <div class="col-4">
-                    <img src="components/portpic.jpg" alt="Picture of Kat" width="100%"> 
-                </div>
-                <div class="col-8">
-                    <h1>Hello,</h1>
-                    <p> I'm Katherine, a student at Olin College of Engineering, majoring in engineering with a concentration in computing. 
-                    <br>I'm particularly passionate about robotics, and am really interested in how computer vision can make smarter robots.
-                    <br> Beyond my engineering projects, you can find me working advocating about various things from workers rights to transparency
-                     in the fashion industry, playing my favorite abba songs on piano, or sketching portraits of my friends. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </body>
+	<head>
+		<title>Katherine Mackowiak - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<!-- <section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Katherine Mackowiak - Portfolio</a></h1>
+
+					<!-- Nav -->
+						<!-- <nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li>
+											<a href="#">Phasellus consequat</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Left Sidebar</a></li>
+								<li><a href="right-sidebar.html">Right Sidebar</a></li>
+								<li><a href="no-sidebar.html">No Sidebar</a></li>
+							</ul>
+						</nav> -->
+
+					<!-- Banner -->
+						<section id="banner">
+							<header>
+								<h2>Portfolio</h2>
+								<p>Katherine Mackowiak</p>
+							</header>
+						</section>
+
+					 -->
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Portfolio -->
+									<section>
+										<header>
+										</header>
+										<div class="row">
+											<div class="col-4 col-6-medium col-12-small">
+												<section class="box">
+													<a href="https://olincollege.github.io/pie-2021-03/Strandbeest/" class="image featured"><img src="components/photoroombeest.JPG" alt="" /></a>
+													<header>
+														<h3>Powered Strandbeest</h3>
+													</header>
+													<p>This project was for my Principles of Integrated Engineering class, in which we had to create an integrated robotic system with 
+														significant mechanical, electrical, and software components. My team built a motor powered walking Strandbeest, which had a vision
+														system which allowed it to follow a person around. I worked primarily on the software for the project, but also helped with overarching
+														design decisions throughout the process.</p>
+													<footer>
+														<ul class="actions">
+															<li><a href="https://olincollege.github.io/pie-2021-03/Strandbeest/" class="button alt">Project Website</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+											<div class="col-4 col-6-medium col-12-small">
+												<section class="box">
+													<a href="https://colab.research.google.com/drive/10i3-K-WKUHUOHs7BIKwqCQ5zqTYr3RC6?usp=sharing" class="image featured"><img src="components/wave.jpg" alt="Sound wave, image credit Adobe Stock" /></a>
+													<header>
+														<h3>Generating New Abba Music</h3>
+													</header>
+													<p>For this project, my teammate and a high level overview of what LSTM Networks are as well as a walkthrough of an implementation 
+														of how they can be used to generate music. We specifically chose to create new Abba music using a database of midi files.
+														 The project includes the theory and math behind the LSTM, along with its relation to our dataset, 
+														and how we worked to optimize our algoritm after understanding the theory. </p>													
+													<footer>
+														<ul class="actions">
+															<li><a href="https://colab.research.google.com/drive/10i3-K-WKUHUOHs7BIKwqCQ5zqTYr3RC6?usp=sharing" class="button alt">Project Notebook</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+											<div class="col-4 col-6-medium col-12-small">
+												<section class="box">
+													<a href="https://docs.google.com/presentation/d/1kLz0v3dbbsIdbD2KobQKwRVnUk-5z7afGC14LeeY44w/edit?usp=sharing" class="image featured"><img src="components/ProactiveCell.gif" alt="Human Model Interacting With Robot" /></a>
+													<header>
+														<h3>Human Avoidance Cobot Cell</h3>
+													</header>
+													<p>This was a project at Southwest Research Institute. The overall objective was to develop a robot motion planning system that responds to the position of a human in real-time.
+														I contributed to the integration of the system - working on communication between the human motion capture system and the real-time path planning system. 
+														I worked with ROS and C++ to create the human model in the path planning collision model shown above.</p>
+													<footer>
+														<ul class="actions">
+															<li><a href="https://docs.google.com/presentation/d/1kLz0v3dbbsIdbD2KobQKwRVnUk-5z7afGC14LeeY44w/edit?usp=sharing" class="button alt">Project Presentation</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+											<div class="col-4 col-6-medium col-12-small">
+												<section class="box">
+													<a href="https://github.com/sam-coleman/Virtual_Interaction" class="image featured"><img src="components/drawing.png" alt="Flower That Has Been Drawn Using Target in Camera" /></a>
+													<header>
+														<h3>OpenCV Painting</h3>
+													</header>
+													<p>Our project goal was to use C++ and OpenCV to get input from a user, and use that input to perform a task. 
+														We tracked a color target to allow the user to "paint" in the air. We included various painting 
+														options, including allowing the user to select different colors and line 
+														thicknesses. We explored tracking a users hand, but found that our accuracy and runtime were not high enough for our 
+														end application.
+														<footer>
+														<ul class="actions">
+															<li><a href="https://github.com/sam-coleman/Virtual_Interaction" class="button alt">View Code</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+											<div class="col-4 col-6-medium col-12-small">
+												<section class="box">
+													<a href="https://github.com/sam-coleman/FoodFest" class="image featured"><img src="components/fallingfood.png" alt="Game Screen With Food" /></a>
+													<header>
+														<h3>Food Fest Game</h3>
+													</header>
+													<p>
+														This is an OpenCV food catching game utilizing dlib for face identification.
+														The game identifies any faces within a webcam frame and uses that information to let players "eat" food images on screen. 
+														The main game premise has food, poison, and hearts which fall from the top of the screen. The player must catch food, and avoid poison, otherwise they lose a life.
+														The player loses once all lives are lost.
+													</p>
+													<footer>
+														<ul class="actions">
+															<li><a href="https://github.com/sam-coleman/FoodFest" class="button alt">View Code</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+											<div class="col-4 col-6-medium col-12-small">
+												<section class="box">
+													<a href="https://drive.google.com/file/d/1Zl0ykyL5lrSaqjb_RWGd8giGoX27b2iv/view?usp=sharing" class="image featured"><img src="components/2018robot.jpg" alt="Picture of FIRST Robotics Competition Robot" /></a>
+													<header>
+														<h3>Cube Tracking Robot</h3>
+													</header>
+													<p>
+														Used opencv to track yellow game pieces as part of a project for FIRST Robotics Team 1511. Isolated the largest cluster of
+                        								pixels that were within the yellow color range to identify the nearest cube, and then used the position
+								                        in the frame to adjust the robot path to the game piece, updating the speed based on the distance to the target.
+														 This would allow the robot to autonomously aquire game pieces during a match.
+													</p>
+													<footer>
+														<ul class="actions">
+															<li><a href="https://drive.google.com/file/d/1Zl0ykyL5lrSaqjb_RWGd8giGoX27b2iv/view?usp=sharing" class="button alt">Demo</a></li>
+															<li><a href="https://github.com/kviiim/FRC_1511_2018/blob/main/thunderbot2018/src/Vision.cpp" class="button alt">View Code</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+										</div>
+									</section>
+								</div>	
+							</div>
+					</div>
+				</section>
+
+
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section class="box">
+										<p class="image featured"><img src="components/portpic.png" alt="" /></p>
+										<header>
+											<h3>About Me</h3>
+										</header>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<p>
+											 Hi, I'm Katherine, a student at Olin College of Engineering, majoring in engineering with a concentration in computing. 
+												I'm particularly passionate about robotics, and am really interested in how computer vision can make smarter robots.
+												I love learning, and while I am primarily focused on software in school, I also love broadening my skills in anything from CAD and manufacturing to user centered design. 
+												Beyond my engineering projects, you can find me playing my favorite abba songs or rehearsing for a musical on piano, sketching portraits of my friends, or going thrifting
+												for new secondhand treasures. 
+										</p>
+										<footer>
+											<ul class="actions">
+												<li><a href="https://drive.google.com/file/d/1RnP6BZrKJgeSpptrdFnZE1g5oMen01Yg/view?usp=sharing" class="button alt">Resume</a></li>
+											</ul>
+										</footer>
+									</article>
+
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
