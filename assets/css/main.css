@@ -8,11 +8,11 @@
 */
 
 :root {
-	--brown: #643a12;
-	--dark_brown: #271402;
+	--brown: #5175a5;
+	--dark_brown: #6587ab;
 	--cream: #fffff9;
-	--cream_2: #f5d6af;
-	--cream_3: #d8a562;
+	--cream_2: #fefbe8;
+	--cream_3: #f5d6af;
 
   }
 
@@ -2191,7 +2191,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../components/headerimg.jpg");
+		background: #ffffff url("../../components/header.png");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
